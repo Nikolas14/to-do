@@ -76,7 +76,7 @@
   }
   
   .completo {
-    color: var(--claro);
+    color: var(--branco);
     text-decoration: line-through;
     cursor: pointer;
     margin: 1em;
