@@ -1,0 +1,7 @@
+.todosContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 4px;
+}

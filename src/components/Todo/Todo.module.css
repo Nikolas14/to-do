@@ -1,0 +1,5 @@
+.todoContainer{
+    border: 1px var(--branco) solid;
+    border-radius: 15px;
+    background-color: var(--medio);
+}

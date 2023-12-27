@@ -1,0 +1,31 @@
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.input{
+    display: block;
+    flex-grow: 1;
+    width: 150px;
+    background-color: transparent;
+    font-size: larger;
+    border-radius: 10px;
+    height: 34px;
+    color: var(--branco);
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.iconeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px;
+    margin-left: 32px;
+    color: var(--branco);
+}

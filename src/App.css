@@ -12,85 +12,13 @@
 
 
   body {
-    background: var(--medio);
+    background: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .todoWrapper {
-    background: var(--escuro);
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    padding-bottom: 15px;
-    border-radius: 25px;
-    width: auto;
-  }
 
-  h1{
-    color: var(--branco);
-    text-align: center;
-  }
-
-  .todoForm {
-    color: var(--branco);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 1em;
-    margin-right: 1em;
-
-  }
-
-  .todo-input {
-    border: 1px solid var(--claro);
-    flex-grow: 1;
-    border-radius: 5px;
-    height: 2.75em;
-    background-color: var(--claro);
-    color: var(--branco);
-  }
   
-  .todo-input::placeholder {
-    color: var(--branco);
-  }
- 
-  .todo {
-    background: var(--claro);
-    color: var(--branco);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    margin-right: 1em;
-  }
-  .incompleto {
-    color: var(--branco);
-    cursor: pointer;
-    margin: 1em;
-  }
+
   
-  .completo {
-    color: var(--branco);
-    text-decoration: line-through;
-    cursor: pointer;
-    margin: 1em;
-  }  
-  .edit-icon,
-  .delete-icon,
-  .add-icon {
-    cursor: pointer;
-    color: var(--branco);
-  }
-
-  .icons{
-    display:flex;
-    gap: 1em ;
-    margin: 10px;
-  }
-

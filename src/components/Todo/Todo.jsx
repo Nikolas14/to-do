@@ -1,16 +1,31 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPen } from '@fortawesome/free-solid-svg-icons'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import style from'./Todo.module.css'
+
+import TodoInput from "./TodoInput/TodoInput";
+import TodoNormal from './TodoNormal/TodoNormal';
 
 
-function Todo({ task , toggleComplete, deleteTodo, editTodo}) {
+function Todo({task, editTodo, deleteTodo,toggleComplete, editTask}) {
+
+    console.log(task.color)
     return (
-        <div className="todo">
-            <p className={`${task.completed ? "completo" : "incompleto"}`} onClick={() => toggleComplete(task.id)}>{task.task}</p>
-            <div className='icons'>
-                <FontAwesomeIcon className="edit-icon" icon={faPen} onClick={() => editTodo(task.id)} />
-                <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
-            </div>
+        //task.color pro bgc
+        
+        <div className={style.todoContainer}>
+                {
+                    
+                    task.isEditing ? (
+                        <TodoInput 
+                            task={task} 
+                            editTask={editTask}
+                        />
+                        ):(
+                        <TodoNormal task={task}
+                            editTodo={editTodo}
+                            deleteTodo={deleteTodo}
+                            toggleComplete={toggleComplete}
+                        />
+                        )
+                }
         </div>
     )
 }

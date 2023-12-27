@@ -1,0 +1,46 @@
+.todoNormalContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    /*border: 1px solid white;*/
+
+}
+
+.textoContainer{
+    display: block;
+    flex-grow: 1;
+    width: 150px;
+    padding-left: 8px;
+    word-wrap: break-word;
+    /*border: 1px solid white;*/
+}
+
+.iconeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px;
+    color: var(--branco);
+   /*border: 1px solid white;*/
+}
+.completo{
+    text-align: justify;
+    text-decoration: line-through;
+    opacity: 50%;
+    color: var(--branco);
+}
+
+.incompleto{
+    text-align: justify;
+    color: var(--branco);
+}
+
+.editIcon,
+.deleteIcon,
+.completo,
+.incompleto{
+  cursor: pointer;
+}
