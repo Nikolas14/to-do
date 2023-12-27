@@ -16,7 +16,7 @@ function TodoContainer() {
     }, []);
 
     return (
-        <div className={style.todoWrapper}>
+        <div className={style.todoContainer}>
             <Titulo/>
             <AddTodo todos={todos} setTodos={setTodos} />
             <Todos todos={todos} setTodos={setTodos} />

@@ -8,16 +8,11 @@
     --medio: #373783;
     --claro: #8758ff;
     --branco: #ffffff;
-    width: 400px;
-
   }
 
 
   body {
     background: var(--branco);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
   
 
